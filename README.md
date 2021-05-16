@@ -1,3 +1,4 @@
 # CanvasSlideshow
 # HTMLCanvasSlideshow
 # HTMLCanvasSlideshow
+# HTMLCanvasSlideshow
