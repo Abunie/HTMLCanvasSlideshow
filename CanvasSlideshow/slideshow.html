@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <link rel="stylesheet" href="../shared/style.css">
+      <title>Abuni's SlideShow on HTML5 Canvas</title>
+       <script src="script.js"></script>
+    
+   </head>
+   <body>
+       <header>
+        <div class="topnav">
+         <button   onclick="StartStop()" id="startstop">Start/Stop</button>
+         <button id="randomsequential" onclick="RandomSequential()">Random/Sequential</button>
+           <form style="float:right; padding: 5px"  id="transitions" action="#">
+              <select name="transitions" id="transitions" onchange="changeTransition(this.value)">
+                <option value="normal">Normal</option>
+                <option value="corner_effect">Corner Effect</option>
+                <option value="swipe_right">Swipe Right</option>
+                <option value="grow">Grow</option>
+              </select>
+            </form> 
+            
+</div>   
+    </header>
+    <br>
+    
+    <h1 id="caption"> Hello</h1>
+    
+    <br>
+       <div style = "text-align:center;">
+           
+          <canvas id ="slides" width = "800" height = "500" style = "border: 1px solid black;">
+             Your browser does not support canvas.
+          </canvas>
+          <div id=forward_backward style="display:none;">
+            <button id="front"  onclick="setForward()"> &#60; Forward</button>
+            <button id="back"  onclick="setBackward()" >Backward &#62;</button>
+           </div>
+      </div>
+     
+   </body>  
+</html>
